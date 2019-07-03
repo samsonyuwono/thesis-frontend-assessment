@@ -1,0 +1,59 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | http://h5bp.com/ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("fonts/Roboto-Regular.ttf");
+}
+
+body {
+  font: 16px/26px Roboto-Regular, Helvetica Neue, Arial;
+  background-color: #000;
+  color: white;
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.logo {
+  color: white;
+  display: inline-block;
+  border: 2px solid red;
+}
+.hamburger {
+  display: none;
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item:hover {
+  background-color: gray;
+}
+
+.nav-item:hover a {
+  color: #000;
+}
+
+.hamburger {
+  display: none;
+}
