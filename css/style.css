@@ -16,6 +16,13 @@ body {
   width: 100%;
 }
 
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto-Regular", "Helvetica Neue", sans-serif;
+}
+
 .navbar {
   width: 100%;
   padding-left: 30px;
@@ -56,4 +63,215 @@ body {
 
 .hamburger {
   display: none;
+}
+
+.main-container {
+  height: 612px;
+  padding-top: 100px;
+  border: 2px solid red;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Articles */
+
+/* Left */
+
+.left {
+  width: 50%;
+  margin: 6%;
+  border: 2px solid red;
+}
+.left-header {
+  font-size: 3vw;
+  font-size: 43px;
+  width: 100%;
+  line-height: 1.2;
+}
+
+.quote {
+  margin-top: 30px;
+  font-size: 25px;
+}
+/*Janusz code*/
+
+/* MENU */
+#page-nav {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  padding-right: 700px;
+}
+
+#page-nav label,
+#page-nav ul,
+#page-nav li {
+  display: inline-block;
+}
+
+/* HAMBURGER */
+#page-nav label,
+#hamburger {
+  display: none;
+}
+#page-nav label {
+  color: #fff;
+  background: #000;
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+/* MENU ITEMS */
+#page-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#page-nav ul li {
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+#page-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* HAMBURGER SMALL SCREENS */
+@media screen and (max-width: 768px) {
+}
+
+/* MENU STYLES */
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  width: 500px;
+}
+
+.menu li {
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 18px;
+}
+
+/* MAIN NAV */
+
+.mainNav {
+  float: left;
+  padding-right: 300px;
+  padding-top: 20px;
+  /* border: 2px solid red; */
+}
+
+/* MAIN CONTAINER */
+
+/* Right */
+
+.right {
+  padding-top: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+  /* border: 2px solid red; */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  border: 1px solid grey;
+  height: 240px;
+  width: 460px;
+  border-radius: 1%;
+  margin-top: 40px;
+}
+
+.form input {
+  height: 45px;
+  padding: 10px;
+  background: transparent;
+  border-top: 1px lightgrey;
+  border-left: none;
+  border-right: none;
+}
+
+.button {
+  background: rgb(90, 152, 241);
+  height: 60px;
+  padding: 10px;
+  border: none;
+}
+
+/* FOOTER */
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background: #000;
+  /* border: 2px solid red; */
+  padding-top: 200px;
+  padding-bottom: 20px;
+}
+
+.footerNav {
+  padding-right: 40px;
+}
+
+.footerMenu {
+  display: inline-flex;
+  /* border: 2px solid red; */
+  letter-spacing: 2px;
+}
+
+.footerMenu li {
+  display: flex;
+  /* border: 2px solid red; */
+  padding: 20px;
+  text-transform: uppercase;
+  font-kerning: 1.2;
+}
+
+.copyright {
+  padding-left: 60px;
+}
+
+nav a,
+#page-nav a,
+#termsOfService {
+  /* display: flex; */
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+nav a:hover,
+#page-nav a:hover,
+nav a:visited,
+#page-nav a:visited,
+#termsOfService:hover {
+  color: white;
+}
+
+nav a:hover,
+#page-nav a:hover,
+#termsOfService:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 414px) {
+  .nav-links {
+    display: none;
+  }
+  .hamburger {
+    font-size: 10vw;
+    padding: 3%;
+    display: inline;
+  }
 }
